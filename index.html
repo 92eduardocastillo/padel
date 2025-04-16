@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padel Scoreboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scoreboard">
+        <h1>Padel Scoreboard</h1>
+        <div class="team">
+            <h2>Team 1</h2>
+            <p id="score1">0</p>
+            <button onclick="incrementScore(1)">+1</button>
+        </div>
+        <div class="team">
+            <h2>Team 2</h2>
+            <p id="score2">0</p>
+            <button onclick="incrementScore(2)">+1</button>
+        </div>
+    </div>
+    <div class="rules">
+        <h2>Rules of Padel</h2>
+        <ul>
+            <li>The game is played in doubles.</li>
+            <li>The ball must bounce on the ground before hitting the walls.</li>
+            <li>Serves must be underhand and bounce in the opponent's service box.</li>
+            <li>Points are scored when the opponent fails to return the ball correctly.</li>
+            <li>The scoring system is the same as tennis: 15, 30, 40, and game.</li>
+        </ul>
+    </div>
+    <div id="rulesModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Rules of Padel</h2>
+            <ul>
+                <li>The game is played in doubles.</li>
+                <li>The ball must bounce on the ground before hitting the walls.</li>
+                <li>Serves must be underhand and bounce in the opponent's service box.</li>
+                <li>Points are scored when the opponent fails to return the ball correctly.</li>
+                <li>The scoring system is the same as tennis: 15, 30, 40, and game.</li>
+            </ul>
+        </div>
+    </div>
+    <button onclick="openModal()">View Rules</button>
+    <script src="script.js"></script>
+</body>
+</html>
